@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="code.js"></script>
+</head>
+<body>
+  <header>
+    <h1>My Projects</h1>
+    <nav>
+        <ul>
+          <li><a href="Index.html" class="navigation">Home</a></li>
+          <li><a href="AboutMe.html" class="navigation">About Me</a></li>
+          <li><a href="MyProjects.html" class="navigation">Projects</a></li>
+          <li><a href="ContactMe.html" class="navigation">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+  <main>
+    <section class="cover">
+        <h2>Projects</h2>
+        <p>Below are some projects I have worked on in the different programming languages I know. I will eventually add more as I progress in my 
+           in my career, so feel free to check back and see how much I've grown as a programmer!
+        </p>
+    </section>
+    <section class="content">
+      <div class="card">
+        <h2>Python Projects</h2>
+        <p>This project allows a user to enter 10 integers and utilizes a menu to perform whatever task the user chooses. 
+          Please click on an image to see the examples and then use the arrows to navigate left and right.</p>
+        <div class="row">
+          <div class="column">
+            <img src="Images/Project1-Part1_Case1.PNG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="Images/Project1-Part1_Case2.PNG" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="Images/Project1-Part1_Case3.PNG" onclick="openModal();currentSlide(3)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="Images/Project1-Part1_Case4.PNG" onclick="openModal();currentSlide(4)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="Images/Project1-Part1_Case5.PNG" onclick="openModal();currentSlide(5)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="Images/Project1-Part1_Case6.PNG" onclick="openModal();currentSlide(6)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="Images/Project1-Part1_Case7.PNG" onclick="openModal();currentSlide(7)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="Images/Project1-Part1_End.PNG" onclick="openModal();currentSlide(8)" class="hover-shadow">
+          </div>
+        </div>
+        
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides">
+              <div class="numbertext">1 / 8</div>
+              <img src="Images/Project1-Part1_Case1.PNG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 8</div>
+              <img src="Images/Project1-Part1_Case2.PNG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 8</div>
+              <img src="Images/Project1-Part1_Case3.PNG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 8</div>
+              <img src="Images/Project1-Part1_Case4.PNG" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">5 / 8</div>
+              <img src="Images/Project1-Part1_Case5.PNG" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">6 / 8</div>
+              <img src="Images/Project1-Part1_Case6.PNG" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">7 / 8</div>
+              <img src="Images/Project1-Part1_Case7.PNG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">8 / 8</div>
+              <img src="Images/Project1-Part1_End.PNG" style="width:100%">
+            </div>
+        
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <!-- Caption text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Python Projects</h2>
+        <p>No projects yet, but here's the full course I'm currently learning from!</p>
+        <iframe width="100%" height="60%" src="https://www.youtube.com/embed/8DvywoWv6fI" title="Python for Everybody - Full University Python Course" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen alt="Python4Everybody Youtube Video"></iframe>
+      </div>
+      <div class="card">
+        <h2>Web Projects</h2>
+        <p>Projects incoming soon!</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <a href="mailto:gruiz719@gmail.com"><img src = "Images/EmailWeb.png" alt="Email Logo" height="40px" width="40px" class="logo"></a>
+    <a href="https://www.instagram.com/gregory_ruiz_jr/"><img src = "Images/InstaWeb.png" alt="Instagram Logo" height="40px" width="40px" class="logo"></a>
+    <a href="https://www.linkedin.com/in/gregory-ruiz-717a79335/"><img src = "Images/LinkedInWeb.png" alt="LinkedIn Logo" height="40px" width="40px" class="logo"></a>
+  </footer>
+</body>
+</html>
